@@ -1,0 +1,262 @@
+body,#header,#nav,#label,#module_1,#module_2,#footer{
+    margin: 0 auto;
+}
+body{
+    width: 500px;
+    box-sizing: border-box;
+}
+#header{
+    width: 500px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    background-color: #99dddd;
+}
+#header a,#header span{
+    height: 50px;
+    color: #ffffff;
+}
+#header a{
+    width: 100px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#header span{
+    width: 400px;
+    margin-left: 110px;
+}
+
+#nav{
+    width: 500px;
+    height: 50px;
+}
+#nav ul{
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav li{
+    width: 100px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+}
+#nav a{
+    text-decoration: none;
+    color: #666666;
+}
+#nav li:hover{ /* 鼠标移上去时显示边框 */
+    border-bottom: 2px #99dddd solid; 
+}
+
+#logo,#logo img{
+    width: 500px;
+    height: 250px;
+}
+#logo{
+    margin: 2px auto;
+}
+#logo a{
+    text-decoration: none;
+}
+
+#label{
+    width: 500px;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label_item{
+    width: 100px;
+    height: 125px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.label_bg{
+    background: url(images/label.gif) no-repeat;
+    width: 100px;
+    height: 80px;
+    margin-top: 5px;
+}
+.label_item p{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #777777;
+    margin-top: 5px;
+}
+
+#divide_item{
+    width: 500px;
+    height: 220px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+}
+.divide_item_1,.divide_item_2,.divide_item_3{
+    float: left;
+    width: 166px;
+    height: 185px;
+    margin-top: 15px;
+    text-align: center; /* 居中 */
+}
+.divide_item_1{
+    border-right: 1px solid #ebebeb;
+}
+.divide_item_2{
+    border-right: 1px solid #ebebeb;
+}
+.divide_item_1 img,.divide_item_2 img,.divide_item_3 img{
+    text-align: center;
+    width: 120px;
+    height: 100px;
+}
+.divide_item_1 h2,.divide_item_2 h2,.divide_item_3 h2{
+    margin-top: 5px;
+    color: #2c2c2c;
+}
+.divide_item_1 h3,.divide_item_2 h3,.divide_item_3 h3{
+    margin-top: -10px;
+    color: #666666;
+}
+
+#module_1,#module_2{
+    width: 500px;
+    height: 370px;
+    border-top: 20px solid #ebebeb;
+}
+#module_2{
+    margin-top: 30px;
+}
+.module_title{
+    width: 480px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ebebeb;
+}
+.module_title h2{
+    color: #666666;
+}
+.module_content{
+    width: 480px;
+    height: 150px;
+    margin-left: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.module_content img{
+    width: 120px;
+    height: 120px;
+}
+.content{
+    width: 160px;
+    height: 120px;
+    float: left;
+}
+.content p{
+    width: 160px;
+    height: 48px;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: center;
+    color: #484848;
+    background-color: #ebebeb;
+}
+
+#row_article_1,#row_article_2{
+    width: 500px;
+    height: 130px;
+    margin: 5px auto;
+}
+#row_article_1{
+    border-top: 20px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+#row_article_2{
+    border-bottom: 1px solid #ebebeb;
+}
+#row_article_1 img,#row_article_2 img{
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin: 5px 10px 10px;
+}
+.row_content{
+    float: left;
+    width: 280px;
+    height: 120px;
+    margin-top: 5px;
+    position: relative;
+}
+.row_content h3{
+    width: 280px;
+    height: 80px;
+    margin-top: 2px;
+}
+.row_content a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #666666; /* 因为<a>标签在<h3>标签里面，所以文字属性写在<a>标签里面才有效果 */
+}
+.row_content p{
+    color: #cccccc;
+    position: relative;
+    bottom: 10px;
+}
+
+#col_article{
+    height: 150px;
+    margin: 10px auto;
+    position: relative;
+}
+#col_article,#col_article h3,.col_bg{
+    width: 480px;
+}
+#col_article h3{
+    height: 35px;
+    margin-top: 5px;
+}
+#col_article h3 a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #666666;
+}
+.col_bg{
+    height: 120px;
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col_bg img{
+    width: 155px;
+    height: 120px;
+    margin: 2px;
+}
+#col_article p{
+    position: relative;
+    bottom: 5px;
+    color: #cccccc;
+}
+
+#footer{
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #ebebeb;
+}
